@@ -1,9 +1,3 @@
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package CoffeeCollection;
 
 /**
@@ -64,8 +58,8 @@ public class CoffeeCollection {
         System.out.println("Previous Farmer receiving bags was farmer number " + previousFarmer);
         System.out.println("Next Farmer receiving bags is  " + nextFarmer);
         
-        int farmer = Days % n;
-        if (farmer == 0) {
+        int farmer = Days % n; // sets Farmer to modulus(remainder) of Days/n(number of farmers)
+        if (farmer == 0) {//assigns farmer to n(number of farmers) if modulus is 0 (no remainder)
             farmer = n;
         }
         System.out.println(Days + " days from now, it will be Farmer number " + farmer + "'s turn to receive bags");
@@ -73,36 +67,44 @@ public class CoffeeCollection {
     }
 
     public int getFarmer() {
+        //getter for Farmer
         return Farmer;
     }
 
     public void addFarmer() {
+        //function to add farmer (adds 1)
         int Farmer = (this.getFarmer()) + 1;
         this.setFarmer(Farmer);
     }
 
     public void removeFarmer() {
+        //function to remove Farmer (subtracts 1)
         int Farmer = (this.getFarmer()) - 1;
         this.setFarmer(Farmer);
     }
 
     public void setFarmer(int Farmer) {
+        //setter for Farmer
         this.Farmer = Farmer;
     }
 
     public int getBags() {
+        //getter for Bags
         return Bags;
     }
 
     public void setBags(int Bags) {
+        //seter for Bags
         this.Bags = Bags;
     }
 
     public int getDays() {
+        //getter for Days
         return Days;
     }
 
     public void setDays(int Days) {
+        //setter for Days
         this.Days = Days;
     }
 
