@@ -1,0 +1,7 @@
+Farmers in the village 
+7, 6, 5, 4, 3, 2, 1, 
+ 
+Farmer receiving bags currently is  farmer number 1
+Previous Farmer receiving bags was farmer number 5
+Next Farmer receiving bags is  0
+8 days from now, it will be Farmer number 1's turn to receive bags
